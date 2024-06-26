@@ -31,14 +31,17 @@ const routes: Routes = [
   {
     path: 'income',
     component: IncomeComponent,
+    data: { label: 'Income' },
   },
   {
     path: 'expense',
     component: ExpenseComponent,
+    data: { label: 'Expense' },
   },
   {
     path: 'todo',
     component: TodoComponent,
+    data: { label: 'ToDo' },
   },
   {
     path: 'history',
@@ -48,6 +51,7 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
+    data: { label: 'Profile' },
   },
 ];
 
