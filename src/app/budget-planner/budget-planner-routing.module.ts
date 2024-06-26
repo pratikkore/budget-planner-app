@@ -11,6 +11,11 @@ import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full',
+  },
+  {
     path: 'login',
     component: LoginComponent,
   },
@@ -21,8 +26,7 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
-    data: { label: 'Dashboard' }
-
+    data: { label: 'Dashboard' },
   },
   {
     path: 'income',
@@ -39,8 +43,7 @@ const routes: Routes = [
   {
     path: 'history',
     component: HistoryComponent,
-    data: { label: 'Previous Histroy' }
-
+    data: { label: 'Previous Histroy' },
   },
   {
     path: 'profile',
